@@ -9,10 +9,6 @@ public class FileWriterImpl implements FruitFileWriter {
 
     @Override
     public void write(List<String> report, String fileName) {
-        try {
-            Files.write(Path.of(fileName),report);
-        } catch (IOException e) {
-            throw new RuntimeException("Can't write into the file by path: " + fileName, e);
-        }
+        //oops
     }
 }
